@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/food_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/sel_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/food_img"
+                android:hint="Item name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/sel_item_details"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_toRightOf="@+id/food_img"-->
+<!--                android:hint="Item Details"-->
+<!--                android:textSize="14sp" />-->
+
+            <TextView
+                android:id="@+id/food_price"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTintMode="screen"
+                android:gravity="center"
+                android:hint="!00"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:textColor="@color/pink" />
+            <TextView
+                android:id="@+id/Rs"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/food_price"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:backgroundTintMode="screen"
+                android:gravity="center"
+                android:text="Rs. "
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:textColor="@color/pink" />
+
+
+            <Button
+                android:id="@+id/add_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTintMode="screen"
+                android:onClick="ShowPopup"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="@color/pink" />
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

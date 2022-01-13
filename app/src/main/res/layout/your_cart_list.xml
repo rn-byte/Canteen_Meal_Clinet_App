@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:elevation="@dimen/cardview_compat_inset_shadow">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/Date"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:hint="2020/09/10"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <RelativeLayout
+        android:id="@+id/rel_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cartY_fName"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:gravity="left"
+            android:hint="Food Name"
+            android:textSize="23sp"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/carty_rs"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:hint="Rs."
+                android:textSize="15sp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/carty_fPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/carty_rs"
+                android:hint="100"
+                android:textSize="15sp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mult"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_toRightOf="@id/carty_fPrice"
+                android:hint="*"
+                android:textSize="15sp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/qunty"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_toRightOf="@+id/mult"
+                android:hint="5"
+                android:textSize="15sp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/equals"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_toRightOf="@+id/qunty"
+                android:hint="="
+                android:textSize="15sp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/totaly"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_toRightOf="@+id/equals"
+                android:hint="Rs. 10000"
+                android:textSize="15sp"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/rel_layout">
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/btn_edit"-->
+        <!--            android:layout_width="48dp"-->
+        <!--            android:layout_height="48dp"-->
+        <!--            android:backgroundTint="@color/white"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:src="@drawable/edit"-->
+        <!--            tools:ignore="SpeakableTextPresentCheck"-->
+        <!--            tools:layout_editor_absoluteX="250dp"-->
+        <!--            tools:layout_editor_absoluteY="248dp" />-->
+
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content">-->
+
+        <TextView
+            android:id="@+id/yDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2020/09/10"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/yorder_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:hint="O.N 206"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_delete"-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_marginEnd="18dp"-->
+
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:src="@drawable/delete"-->
+<!--            tools:ignore="SpeakableTextPresentCheck"-->
+<!--            tools:layout_editor_absoluteX="250dp"-->
+<!--            tools:layout_editor_absoluteY="248dp" />-->
+        <!--        </RelativeLayout>-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

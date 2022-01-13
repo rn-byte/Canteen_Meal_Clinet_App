@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "647488179027",
+    "project_id": "canteen-meal-ebd19",
+    "storage_bucket": "canteen-meal-ebd19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647488179027:android:95395160e1085057882fa6",
+        "android_client_info": {
+          "package_name": "com.inim.canteenmeal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647488179027-pbskdiiagabo0fktaqcv2bshc9ue2sp4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB13q9UPa1hYBYgUjYpZWsQJJJCoblI4vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647488179027-pbskdiiagabo0fktaqcv2bshc9ue2sp4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
